@@ -114,6 +114,7 @@ let newString = "";
     return newString;
 }
 
+
 let nowString = reverseString("Ahmed")
 console.log(nowString)
 
@@ -128,7 +129,7 @@ function upperFirst(str) {
   
   return str.join(' '); 
 }
-
+}
 upperFirst("Im a bad ass programmer");
 
 /* EXERCISE 9
