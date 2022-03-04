@@ -134,13 +134,27 @@ console.log(upperFirst("i am a bad ass programmer"));
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+function cutString(str) {
+  return str.substring(1, str.length - 1);
+}
+console.log(cutString('striveSchool'));
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR ANSWER HERE */
+function giveMeRandom(n) {
+
+    let randomNumber = [];
+    
+    for(i = 0; i < n; i++) {
+        randomNumber.push(Math.floor(Math.random() * 10)); 
+    }
+    
+    return randomNumber;
+}
+
+console.log(giveMeRandom(6));
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
