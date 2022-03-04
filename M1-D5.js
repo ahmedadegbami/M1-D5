@@ -153,8 +153,7 @@ function giveMeRandom(n) {
     
     return randomNumber;
 }
-
-console.log(giveMeRandom(6));
+console.log(giveMeRandom(6));  
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
