@@ -122,15 +122,13 @@ console.log(nowString)
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 function upperFirst(str) {
-  str = str.toLowerCase();
-  str = str.split(' ');
-  for (let i = 0; i < str.length; i++) {
-    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
-  
-  return str.join(' '); 
+  return str.toLowerCase().split(' ').map(function (word) {
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+  }).join(' ');
 }
-}
-upperFirst("Im a bad ass programmer");
+console.log(upperFirst("i am a bad ass programmer"));
+
+
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
